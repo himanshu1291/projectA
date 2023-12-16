@@ -1,0 +1,9 @@
+---
+- name: user creation
+  hosts: all 
+  tasks: 
+    - name: adding user
+      user: 
+          name: Proxy_Server
+          state: present 
+
