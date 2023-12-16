@@ -1,6 +1,6 @@
 ---
- - name: instaliing httpd 
-   hosts: all
+ - name: installing httpd 
+   hosts: localhost
    tasks: 
          name: installing 
          yum:

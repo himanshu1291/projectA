@@ -1,6 +1,6 @@
 ---
 - name: user creation
-  hosts: all 
+  hosts: localhost
   tasks: 
     - name: adding user
       user: 
