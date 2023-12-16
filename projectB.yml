@@ -1,8 +1,10 @@
 ---
- - name: installing httpd 
+ - name: file creation 
    hosts: localhost
    tasks: 
-         name: installing 
-         yum:
-                  name: httpd
-                  state: latest 
+         name: at /usr
+         file:
+                  name: /usr/proxy.txt
+                  state: touch
+                  owner: Proxy_Server 
+
