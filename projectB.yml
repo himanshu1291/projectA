@@ -1,10 +1,12 @@
 ---
  - name: file creation 
    hosts: localhost
+   vars:
+      - password: redhat
    tasks: 
-       - name: at /usr
-         file:
-                  path: /usr/proxy.txt
-                  state: touch
-                  owner: Proxy_Server 
+        - name: adding password
+          user:
+                  name: Proxy_Server
+                  state: present
+                  password: "{{ password | password_hash('sha512') }}" 
 
