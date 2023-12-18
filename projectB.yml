@@ -2,7 +2,7 @@
  - name: file creation 
    hosts: localhost
    tasks: 
-         name: at /usr
+       - name: at /usr
          file:
                   path: /usr/proxy.txt
                   state: touch
