@@ -4,7 +4,7 @@
    tasks: 
          name: at /usr
          file:
-                  name: /usr/proxy.txt
+                  path: /usr/proxy.txt
                   state: touch
                   owner: Proxy_Server 
 
